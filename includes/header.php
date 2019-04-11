@@ -12,17 +12,17 @@ include('includes/mysqli_connect.php');
 
 <!-- 					NAV					-->
 <nav class="navbar navbar-expand-lg navbar-light">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand" href="#">Menu</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a class="nav-link" href="#" onclick="location.reload();location.href='main.php'">Home </a>
+                <a id="home" class="nav-link" href="#" onclick="location.reload();location.href='main.php'">Home </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"onclick="location.reload();location.href='addDocument.php'">Add Document</a>
+                <a id="addDocument" class="nav-link" href="#"onclick="location.reload();location.href='uploads/addDocument.php'">Add Document</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>

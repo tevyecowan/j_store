@@ -1,0 +1,84 @@
+/**********GENERAL***********/
+
+body {
+	background: white;
+	color:#555;
+	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
+	padding:20px;
+}
+
+.navbar {
+	background: floralwhite;
+}
+
+
+button, .btns {
+	outline: none;
+	padding-top: 5px;
+	text-decoration: none;
+	opacity: 0.6;
+	background-color: black;
+	color: white;
+	border: thin solid white;
+	height: 30px;
+	width: 100%;
+	border-radius: 2px;
+	transition: 0.5s;
+	padding-bottom: 5px;
+	text-align: center;
+}
+
+button:hover, .btns:hover {
+	background-color: grey;
+	color: black;
+	border: thin solid black;
+	opacity: 0.9;
+}
+
+/**********HEADER***********/
+#header {
+	text-align: center;
+	z-index:9;
+	width: 100%;
+
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	padding-right:40px;
+
+}
+
+
+/**********NAVIGATION***********/
+#navigation{
+	display: inline-block;
+	padding-bottom: 50px;
+	z-index:9;
+	float:left;
+	padding-left:20px;
+	padding-top:5px;
+
+}
+
+.navContent {
+	display: none;
+	position: inherit;
+	padding: 0.5em;
+	text-align: center;
+	z-index:9;
+}
+
+#navigation:hover .navContent {
+	display: block;
+}
+
+/*********************CONTENT**********************/
+#content {
+	padding:50px;
+	z-index:1;
+}
+

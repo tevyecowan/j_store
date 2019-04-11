@@ -14,7 +14,12 @@
 <!-- 					HEADER					-->
 <?php
 include('includes/header.php');
+
+include('includes/mysqli_connect.php');
+
 ?>
+
+
 <!-- 					MENU, CONTENT					-->
 <div id="content">
     <?php

@@ -6,9 +6,7 @@
     <h1 style="text-align: center;">J-Store Online Geniza</h1>
 
 </div>
-<?php
-include('includes/mysqli_connect.php');
-?>
+
 
 <!-- 					NAV					-->
 <nav class="navbar navbar-expand-lg navbar-light">
@@ -19,7 +17,7 @@ include('includes/mysqli_connect.php');
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a id="home" class="nav-link" href="#" onclick="location.reload();location.href='main.php'">Home </a>
+                <a id="home" class="nav-link" href="#" onclick="location.reload();location.href='../main.php'">Home </a>
             </li>
             <li class="nav-item">
                 <a id="addDocument" class="nav-link" href="#"onclick="location.reload();location.href='uploads/addDocument.php'">Add Document</a>

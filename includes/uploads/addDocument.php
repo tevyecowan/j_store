@@ -6,7 +6,7 @@
     <meta name="description" content="J-Store Online Geniza">
     <meta name="author" content="Tevye Cowan">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="../includes/styles.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../styles.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -14,8 +14,8 @@
 <!-- 					HEADER					-->
 
 <?php
-include('../includes/header.php');
-include('../includes/mysqli_connect.php');
+include('../header.php');
+include('../mysqli_connect.php');
 
 ?>
 

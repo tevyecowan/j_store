@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b525353-c5d9-4923-a323-34987e7646ff" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/includes/mysqli_connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/includes/mysqli_connect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/uploads/addDocument.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/addDocument.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/uploads/images/0.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/uploads/addDocument.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="799">
-              <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+            <state relative-caret-position="340">
+              <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -49,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/mysqli_connect.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="153">
+              <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -83,12 +83,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/includes/styles.css" />
-        <option value="$PROJECT_DIR$/includes/mysqli_connect.php" />
         <option value="$PROJECT_DIR$/includes/js.js" />
         <option value="$PROJECT_DIR$/addDocument.php" />
         <option value="$PROJECT_DIR$/includes/header.php" />
         <option value="$PROJECT_DIR$/main.php" />
         <option value="$PROJECT_DIR$/uploads/addDocument.php" />
+        <option value="$PROJECT_DIR$/includes/mysqli_connect.php" />
       </list>
     </option>
   </component>
@@ -159,12 +159,12 @@
       <option name="presentableId" value="Default" />
       <updated>1554966106873</updated>
       <workItem from="1554966108014" duration="4078000" />
-      <workItem from="1555008571057" duration="12810000" />
+      <workItem from="1555008571057" duration="13592000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16888000" />
+    <option name="totallyTimeSpent" value="17670000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="692" y="10" width="848" height="860" extended-state="0" />
@@ -230,17 +230,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/uploads/addDocument.php">
+    <entry file="file://$PROJECT_DIR$/includes/mysqli_connect.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="799">
-          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        <state relative-caret-position="153">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/mysqli_connect.php">
+    <entry file="file://$PROJECT_DIR$/uploads/addDocument.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="340">
+          <caret line="35" column="34" lean-forward="true" selection-start-line="35" selection-start-column="34" selection-end-line="35" selection-end-column="34" />
         </state>
       </provider>
     </entry>

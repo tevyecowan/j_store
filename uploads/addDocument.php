@@ -15,6 +15,7 @@
 
 <?php
 include('../includes/header.php');
+include('../includes/mysqli_connect.php');
 
 ?>
 
@@ -23,7 +24,7 @@ include('../includes/header.php');
 
     <?php
 
-    include('../includes/mysqli_connect.php');
+
 
     if (isset($_POST['image'])) {
         $p_file_name = $_POST['image']['name'];
@@ -31,7 +32,12 @@ include('../includes/header.php');
         $p_file_tmp = $_POST['image']['tmp_name'];
         $p_file_type = $_POST['image']['type'];
 
-        $query = "insert into uploads (filename, filesize, filetype)
+        $uploads = "uploads";
+        $p_file_name = "filename";
+        $p_file_size = "filesize";
+        $p_file_type = "filetype";
+
+        $query = "insert into $uploads ($p_file_name, $p_file_size, $p_file_type)
     values('$p_file_name', '$p_file_size', '$p_file_type');";
 
         if (mysqli_query ($dbc, $query)){
@@ -81,7 +87,7 @@ include('../includes/header.php');
         <ul>
             <li>Sent file: <?php echo $_FILES['image']['name'];  ?>
             <li>File size: <?php echo $_FILES['image']['size'];  ?>
-            <li>File type: <?php echo $_FILES['image']['type'] ?>
+            <li>File type: <?php echo $_FILES['image']['type']; ?>
         </ul>
 
     </form>

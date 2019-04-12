@@ -6,8 +6,8 @@
 
 // Set the database access information as constants:
 define ('DB_HOST', 'localhost');
-define ('DB_USER', 'admin');
-define ('DB_PASSWORD', '2358');
+define ('DB_USER', 'root');
+define ('DB_PASSWORD', '');
 define ('DB_NAME', 'j_store');
 
 // Make the connection:

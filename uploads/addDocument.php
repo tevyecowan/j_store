@@ -21,38 +21,22 @@ include('../includes/mysqli_connect.php');
 
 <!-- 					MENU, CONTENT					-->
 <div id="content">
+    <form action = "addDocument.php" method = "POST" enctype = "multipart/form-data">
+        <input type = "file" name = "image" />
+        <input type = "submit" name="submit" />
+
+        <ul>
+            <li>Sent file: <?php echo $_FILES['image']['name'];  ?>
+            <li>File size: <?php echo $_FILES['image']['size'];  ?>
+            <li>File type: <?php echo $_FILES['image']['type']; ?>
+        </ul>
+
+    </form>
 
     <?php
 
 
-
-    if (isset($_POST['image'])) {
-        $p_file_name = $_POST['image']['name'];
-        $p_file_size = $_POST['image']['size'];
-        $p_file_tmp = $_POST['image']['tmp_name'];
-        $p_file_type = $_POST['image']['type'];
-
-        $uploads = "uploads";
-        $p_file_name = "filename";
-        $p_file_size = "filesize";
-        $p_file_type = "filetype";
-
-        $query = "insert into $uploads ($p_file_name, $p_file_size, $p_file_type)
-    values('$p_file_name', '$p_file_size', '$p_file_type');";
-
-        if (mysqli_query ($dbc, $query)){
-            echo "<br>Congrats! You have successfully added your new document.<br>";
-        }else{
-            	echo "ERROR: Could not able to execute $query. " . mysqli_error($dbc) . "<br>";
-        }
-
-        $_POST = array();
-
-    }else{    //if user somehow got to this page without submitting the form
-        echo  "<h4>Please enter your new product into the form below</h4>";
-    }
-
-    if(isset($_FILES['image'])){
+    if(isset($_POST['submit'])){
         $errors= array();
         $f_file_name = $_FILES['image']['name'];
         $f_file_size = $_FILES['image']['size'];
@@ -76,21 +60,23 @@ include('../includes/mysqli_connect.php');
         }else{
             print_r($errors);
         }
+        $query = "insert into uploads (filename, filesize, filetype)
+    values('$f_file_name', '$f_file_size', '$f_file_type');";
+
+        if (mysqli_query ($dbc, $query)){
+            echo "<br>Congrats! You have successfully added your new document.<br>";
+        }else{
+            echo "ERROR: Could not able to execute $query. " . mysqli_error($dbc) . "<br>";
+        }
+
+        $_POST = array();
+    }
+        else{    //if user somehow got to this page without submitting the form
+            echo  "<h4>Please enter your new product into the form below</h4>";
     }
     mysqli_close($dbc);
     ?>
 
-    <form action = "addDocument.php" method = "POST" enctype = "multipart/form-data">
-        <input type = "file" name = "image" />
-        <input type = "submit" name="submit" />
-
-        <ul>
-            <li>Sent file: <?php echo $_FILES['image']['name'];  ?>
-            <li>File size: <?php echo $_FILES['image']['size'];  ?>
-            <li>File type: <?php echo $_FILES['image']['type']; ?>
-        </ul>
-
-    </form>
 
 </div>
 <!-- 					SCRIPTS					-->

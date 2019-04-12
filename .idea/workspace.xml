@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7b525353-c5d9-4923-a323-34987e7646ff" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/uploads/addDocument.php" beforeDir="false" afterPath="$PROJECT_DIR$/uploads/addDocument.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/uploads/images/0.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,11 +31,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/uploads/addDocument.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+            <state relative-caret-position="799">
+              <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -48,7 +49,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/includes/mysqli_connect.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="255">
@@ -92,8 +93,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1525" />
-    <option name="y" value="12" />
+    <option name="x" value="1730" />
+    <option name="y" value="25" />
     <option name="width" value="2120" />
     <option name="height" value="2150" />
   </component>
@@ -158,15 +159,15 @@
       <option name="presentableId" value="Default" />
       <updated>1554966106873</updated>
       <workItem from="1554966108014" duration="4078000" />
-      <workItem from="1555008571057" duration="8211000" />
+      <workItem from="1555008571057" duration="12810000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12289000" />
+    <option name="totallyTimeSpent" value="16888000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="610" y="5" width="848" height="860" extended-state="0" />
+    <frame x="692" y="10" width="848" height="860" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.24936709" />
@@ -194,13 +195,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/includes/mysqli_connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -222,13 +216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -236,10 +223,24 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/includes/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/uploads/addDocument.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="66" column="23" selection-start-line="66" selection-start-column="23" selection-end-line="66" selection-end-column="23" />
+        <state relative-caret-position="799">
+          <caret line="72" column="5" lean-forward="true" selection-start-line="72" selection-start-column="5" selection-end-line="72" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/mysqli_connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>

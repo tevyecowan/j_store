@@ -6,7 +6,7 @@
     <meta name="description" content="J-Store Online Geniza">
     <meta name="author" content="Tevye Cowan">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="includes/styles.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="../includes/styles.css" type="text/css" media="screen" />
 </head>
 
 <body>
@@ -15,50 +15,57 @@
 
 <?php
 include('../includes/header.php');
-include('../includes/mysqli_connect.php');
+
 ?>
 
 <!-- 					MENU, CONTENT					-->
 <div id="content">
 
     <?php
-    if (isset($_POST['filename'])) {
-        $filename = $_POST['filename'];
-        $data  = $_POST['data'];
-        $query = "insert into uploads (data, filename)
-    values('$filename', '$data');";
+
+    include('../includes/mysqli_connect.php');
+
+    if (isset($_POST['image'])) {
+        $p_file_name = $_POST['image']['name'];
+        $p_file_size = $_POST['image']['size'];
+        $p_file_tmp = $_POST['image']['tmp_name'];
+        $p_file_type = $_POST['image']['type'];
+
+        $query = "insert into uploads (filename, filesize, filetype)
+    values('$p_file_name', '$p_file_size', '$p_file_type');";
+
         if (mysqli_query ($dbc, $query)){
-            //echo "Successfully inserted into Product table<br>";
             echo "<br>Congrats! You have successfully added your new document.<br>";
         }else{
-            //	echo "ERROR: Could not able to execute $query. " . mysqli_error($dbc) . "<br>";
+            	echo "ERROR: Could not able to execute $query. " . mysqli_error($dbc) . "<br>";
         }
+
+        $_POST = array();
+
     }else{    //if user somehow got to this page without submitting the form
         echo  "<h4>Please enter your new product into the form below</h4>";
     }
-    mysqli_close($dbc);
-    ?>
-    <?php
+
     if(isset($_FILES['image'])){
         $errors= array();
-        $file_name = $_FILES['image']['name'];
-        $file_size = $_FILES['image']['size'];
-        $file_tmp = $_FILES['image']['tmp_name'];
-        $file_type = $_FILES['image']['type'];
-        $file_ext=strtolower(end(explode('.',$_FILES['image']['name'])));
+        $f_file_name = $_FILES['image']['name'];
+        $f_file_size = $_FILES['image']['size'];
+        $f_file_tmp = $_FILES['image']['tmp_name'];
+        $f_file_type = $_FILES['image']['type'];
+        //$file_ext = strtolower(end(explode('.',$_FILES['image']['name'])));
 
-        $extensions= array("jpeg","jpg","png");
+        //$extensions= array("jpeg","jpg","png");
 
-        if(in_array($file_ext,$extensions)=== false){
-            $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-        }
+       // if(in_array($file_ext,$extensions)=== false){
+        //    $errors[]="extension not allowed, please choose a JPEG or PNG file.";
+       // }
 
-        if($file_size > 2097152) {
-            $errors[]='File size must be excately 2 MB';
+        if($f_file_size > 2097152) {
+            $errors[]='File size must be exactly 2 MB';
         }
 
         if(empty($errors)==true) {
-            move_uploaded_file($file_tmp,"images/".$file_name);
+            move_uploaded_file($f_file_tmp,"images/".$f_file_name);
             echo "Success";
         }else{
             print_r($errors);
@@ -69,7 +76,7 @@ include('../includes/mysqli_connect.php');
 
     <form action = "addDocument.php" method = "POST" enctype = "multipart/form-data">
         <input type = "file" name = "image" />
-        <input type = "submit"/>
+        <input type = "submit" name="submit" />
 
         <ul>
             <li>Sent file: <?php echo $_FILES['image']['name'];  ?>

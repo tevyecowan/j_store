@@ -33,9 +33,9 @@ include('includes/mysqli_connect.php');
         <input type = "submit" name="submit" />
 
         <ul>
-            <li>Sent file: <?php echo $_FILES['image']['name'];  ?>
-            <li>File size: <?php echo $_FILES['image']['size'];  ?>
-            <li>File type: <?php echo $_FILES['image']['type']; ?>
+            <li>Sent file: <?php if(isset($_POST['submit'])){echo $_FILES['image']['name']; } ?>
+            <li>File size: <?php if(isset($_POST['submit'])){echo $_FILES['image']['size']; } ?>
+            <li>File type: <?php if(isset($_POST['submit'])){echo $_FILES['image']['type']; } ?>
         </ul>
 
     </form>

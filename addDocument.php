@@ -1,13 +1,4 @@
-<?php
 
-$returnPage = "addDocument";
-include('includes/header.php');
-$_SESSION['returnPage'] = $returnPage;
-
-
-include('includes/upload.php')
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -23,7 +14,16 @@ include('includes/upload.php')
 <body>
 
 <!-- 					HEADER					-->
+<?php
 
+$returnPage = "addDocument";
+include('includes/header.php');
+$_SESSION['returnPage'] = $returnPage;
+
+
+include('includes/upload.php')
+
+?>
 
 
 <!-- 					MENU, CONTENT					-->

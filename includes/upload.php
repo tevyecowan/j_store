@@ -1,9 +1,8 @@
 
     <?php
     $returnPage = "addDocument";
-    include('includes/header.php');
     $_SESSION['returnPage'] = $returnPage;
-    include('../mysqli_connect.php');
+    include('mysqli_connect.php');
 
     if(isset($_POST['submit'])){
         $errors= array();

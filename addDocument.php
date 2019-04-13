@@ -2,7 +2,6 @@
 $returnPage = "addDocument";
 include('includes/header.php');
 $_SESSION['returnPage'] = $returnPage;
-
 ?>
 
 <!doctype html>

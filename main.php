@@ -2,7 +2,7 @@
 $returnPage = "main";
 include('includes/header.php');
 $_SESSION['returnPage'] = $returnPage;
-//include('includes/mysqli_connect.php');
+include('includes/mysqli_connect.php');
 ?>
 
 <!doctype html>

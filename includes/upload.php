@@ -22,8 +22,9 @@
             $errors[]='File size must be exactly 2 MB';
         }
 
+        define('SITE_ROOT', 'includes/images');
         if(empty($errors)==true) {
-            move_uploaded_file($f_file_tmp,"images/".$f_file_name);
+            move_uploaded_file($f_file_tmp,SITE_ROOT."/".$f_file_name);
             echo "Success";
         }else{
             print_r($errors);

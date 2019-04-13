@@ -1,7 +1,12 @@
 <?php
+
 $returnPage = "addDocument";
 include('includes/header.php');
 $_SESSION['returnPage'] = $returnPage;
+
+
+include('includes/upload.php')
+
 ?>
 
 <!doctype html>
@@ -24,13 +29,9 @@ $_SESSION['returnPage'] = $returnPage;
 <!-- 					MENU, CONTENT					-->
 <div id="content">
 
-    <?php
 
 
-   include('includes/uploads/upload.php')
-    ?>
-
-    <form action = "includes/uploads/upload.php" method = "POST" enctype = "multipart/form-data">
+    <form action = "" method = "POST" enctype = "multipart/form-data">
         <input type = "file" name = "image" />
         <input type = "submit" name="submit" />
 

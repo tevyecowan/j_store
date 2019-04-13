@@ -1,3 +1,10 @@
+<?php
+$returnPage = "main";
+include('includes/header.php');
+$_SESSION['returnPage'] = $returnPage;
+//include('includes/mysqli_connect.php');
+?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,12 +19,7 @@
 <body>
 
 <!-- 					HEADER					-->
-<?php
-include('includes/header.php');
 
-include('includes/mysqli_connect.php');
-
-?>
 
 
 <!-- 					MENU, CONTENT					-->

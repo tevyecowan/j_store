@@ -1,5 +1,6 @@
 <?php
-	session_start();
+session_start();
+include('includes/mysqli_connect.php');
 ?>
 <div id="header">
 

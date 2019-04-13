@@ -1,6 +1,9 @@
 
     <?php
-
+    $returnPage = "addDocument";
+    include('includes/header.php');
+    $_SESSION['returnPage'] = $returnPage;
+    include('../mysqli_connect.php');
 
     if(isset($_POST['submit'])){
         $errors= array();
@@ -21,7 +24,7 @@
         }
 
         if(empty($errors)==true) {
-            move_uploaded_file($f_file_tmp,"includes/uploads/images/".$f_file_name);
+            move_uploaded_file($f_file_tmp,"images/".$f_file_name);
             echo "Success";
         }else{
             print_r($errors);

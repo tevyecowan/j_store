@@ -20,25 +20,48 @@ $returnPage = "addDocument";
 include('includes/header.php');
 $_SESSION['returnPage'] = $returnPage;
 
-
-include('includes/upload.php')
-
 ?>
 
 
 <!-- 					MENU, CONTENT					-->
 <div id="content">
 
+<?php
+
+/*if(!isset($_SESSION['s'])){
+    $_SESSION['s'] = true;
+};
+
+if( !empty( $_POST ) && ($_SESSION['s']) )
+{
+    //your code
+    $_SESSION['s'] = false;
+}
+*/
+
+if(!empty($_POST)) {
+    include('includes/upload.php') ;
+    if ($GLOBALS['a'] == true){
+        echo "<h4>Thank you</h4> <p>You details have been submitted succesfully.</p>";
+    }
+}
 
 
+
+// else show the form, either a clean one or with possible error messages
+else {
+    echo "<h4>Oops! Something went wrong</h4>";
+}
+?>
+    
     <form action = "" method = "POST" enctype = "multipart/form-data">
-        <input type = "file" name = "image" />
+        <input type = "file" name ="fileToUpload"/>
         <input type = "submit" name="submit" />
 
         <ul>
-            <li>Sent file: <?php if(isset($_POST['submit'])){echo $_FILES['image']['name']; } ?>
-            <li>File size: <?php if(isset($_POST['submit'])){echo $_FILES['image']['size']; } ?>
-            <li>File type: <?php if(isset($_POST['submit'])){echo $_FILES['image']['type']; } ?>
+            <li>Sent file: <?php if(isset($_POST['submit'])){echo $_FILES['fileToUpload']['name']; } ?>
+            <li>File size: <?php if(isset($_POST['submit'])){echo $_FILES['fileToUpload']['size']; } ?>
+            <li>File type: <?php if(isset($_POST['submit'])){echo $_FILES['fileToUpload']['type']; } ?>
         </ul>
 
     </form>

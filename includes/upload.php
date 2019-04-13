@@ -1,15 +1,15 @@
 
     <?php
-    $returnPage = "addDocument";
-    $_SESSION['returnPage'] = $returnPage;
+    //$returnPage = "addDocument";
+    //$_SESSION['returnPage'] = $returnPage;
     include('mysqli_connect.php');
 
     if(isset($_POST['submit'])){
         $errors= array();
-        $f_file_name = $_FILES['image']['name'];
-        $f_file_size = $_FILES['image']['size'];
-        $f_file_tmp = $_FILES['image']['tmp_name'];
-        $f_file_type = $_FILES['image']['type'];
+        $f_file_name = $_FILES['fileToUpload']['name'];
+        $f_file_size = $_FILES['fileToUpload']['size'];
+        $f_file_tmp = $_FILES['fileToUpload']['tmp_name'];
+        $f_file_type = $_FILES['fileToUpload']['type'];
         //$file_ext = strtolower(end(explode('.',$_FILES['image']['name'])));
 
         //$extensions= array("jpeg","jpg","png");
@@ -22,10 +22,10 @@
             $errors[]='File size must be exactly 2 MB';
         }
 
-        define('SITE_ROOT', 'includes/images');
+        define('SITE_ROOT', 'includes/uploads');
         if(empty($errors)==true) {
             move_uploaded_file($f_file_tmp,SITE_ROOT."/".$f_file_name);
-            echo "Success";
+            echo "<h4>Your file was added to the uploads folder.</h4>";
         }else{
             print_r($errors);
         }
@@ -33,10 +33,16 @@
     values('$f_file_name', '$f_file_size', '$f_file_type');";
 
         if (mysqli_query ($dbc, $query)){
-            echo "<br>Congrats! You have successfully added your new document.<br>";
+            echo "<br><h4>Your file info was added to the database.</h4><br>";
         }else{
-            echo "ERROR: Could not able to execute $query. " . mysqli_error($dbc) . "<br>";
+            echo "<h4>ERROR: Could not execute $query. " . mysqli_error($dbc) . "</h4><br>";
         }
+
+        if ((empty($errors)==true) && (mysqli_query ($dbc, $query))){
+            $GLOBALS['a'] = true;
+            echo "<br><h4>success</h4><br>";
+        }
+        else{$GLOBALS['a'] = false;}
 
         $_POST = array();
     }

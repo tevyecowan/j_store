@@ -1,8 +1,9 @@
 /**********GENERAL***********/
 
 body {
-	background: white;
-	color:#555;
+	background: darkslategrey;
+	color:dimgrey;
+
 	font:0.8em Arial, Helvetica, "bitstream vera sans", sans-serif;
 	padding:20px;
 }

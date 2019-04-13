@@ -17,10 +17,10 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
         <ul class="navbar-nav">
             <li class="nav-item">
-                <a id="home" class="nav-link" href="#" onclick="location.reload();location.href='../main.php'">Home </a>
+                <a id="home" class="nav-link" href="#" onclick="location.reload();location.href='main.php'">Home </a>
             </li>
             <li class="nav-item">
-                <a id="addDocument" class="nav-link" href="#"onclick="location.reload();location.href='includes/uploads/addDocument.php'">Add Document</a>
+                <a id="addDocument" class="nav-link" href="#"onclick="location.reload();location.href='addDocument.php'">Add Document</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Pricing</a>

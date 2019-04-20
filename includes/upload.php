@@ -10,6 +10,10 @@
         $f_file_size = $_FILES['fileToUpload']['size'];
         $f_file_tmp = $_FILES['fileToUpload']['tmp_name'];
         $f_file_type = $_FILES['fileToUpload']['type'];
+
+
+
+
         //$file_ext = strtolower(end(explode('.',$_FILES['image']['name'])));
 
         //$extensions= array("jpeg","jpg","png");
@@ -25,15 +29,19 @@
         define('SITE_ROOT', 'includes/uploads');
         if(empty($errors)==true) {
             move_uploaded_file($f_file_tmp,SITE_ROOT."/".$f_file_name);
+            $file_path = SITE_ROOT."/".$f_file_name;
+            $file_info = new finfo(FILEINFO_MIME);
+            $mime_type = $file_info->buffer(file_get_contents($file_info));
             echo "<h4>Your file was added to the uploads folder.</h4>";
         }else{
             print_r($errors);
         }
         $query = "insert into uploads (filename, filesize, filetype)
-    values('$f_file_name', '$f_file_size', '$f_file_type');";
+    values('$f_file_name', '$f_file_size', '$mime_type');";
 
         if (mysqli_query ($dbc, $query)){
             echo "<br><h4>Your file info was added to the database.</h4><br>";
+            echo $mime_type;
         }else{
             echo "<h4>ERROR: Could not execute $query. " . mysqli_error($dbc) . "</h4><br>";
         }

@@ -26,6 +26,15 @@ $_SESSION['returnPage'] = $returnPage;
 <!-- 					MENU, CONTENT					-->
 <div id="content">
 
+    <main role="main" class="inner cover float-left">
+        <h1 class="cover-heading">Cover your page.</h1>
+        <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+        <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
+        </p>
+    </main>
+
+
 <?php
 
 /*if(!isset($_SESSION['s'])){
@@ -49,10 +58,10 @@ if(!empty($_POST)) {
     }
 }
 ?>
-    
+    <div id="container">
     <form action = "" method = "POST" enctype = "multipart/form-data">
-        <input type = "file" name ="fileToUpload"/>
-        <input type = "submit" name="submit" />
+        <label class="btn btn-md btn-secondary"> <input style="display: none;" type = "file" name ="fileToUpload"/> Browse File </label>
+        <label class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
 
         <ul>
             <li>Sent file: <?php if(isset($_POST['submit'])){echo $_FILES['fileToUpload']['name']; } ?>
@@ -61,7 +70,7 @@ if(!empty($_POST)) {
         </ul>
 
     </form>
-
+    </div>
 
 
 </div>

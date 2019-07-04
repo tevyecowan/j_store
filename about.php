@@ -22,8 +22,9 @@ $_SESSION['returnPage'] = $returnPage;
 
 
 <!-- 					MENU, CONTENT					-->
-
-
+The concept for JStore originated as a joke, a riff on
+popular academic journal archive JStor. We have JSwipe, JDate,
+J-SOS,
 
 <!-- 					SCRIPTS					-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

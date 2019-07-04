@@ -23,7 +23,7 @@ $_SESSION['returnPage'] = $returnPage;
 
 <!-- 					MENU, CONTENT					-->
 <div id="menu">
-    <div id="cataloguePg" class="cata" style="display: block">
+    <div id="archivePg" style="display: block">
         <form id="searchForm" action="archive.php" method="post">
             Search: <input type="text" name="search"><br><br>
             <?php
@@ -39,16 +39,14 @@ $_SESSION['returnPage'] = $returnPage;
             while ($row = mysqli_fetch_array($result)) {
                 echo "<input type=\"checkbox\" name=\"category[]\" value=\"" . $row['category_id'] . "\">" . $row['category_name'] . "</option><br>";
             }
-            echo "<label><b>Narrow results by Price:</b></label><br>";
-            echo "<label>Price < $</label><input type=\"text\" name=\"maxPrice\" style=\" width: 5em; margin-left: 1px;\"></input><br>";
-            echo "<label>Price > $</label><input type=\"text\" name=\"minPrice\" style=\" width: 5em; margin-left: 1px;\"></input><br>";
+ 
             echo "<label><b>Order results by:</b></label><br>";
             echo "<input type=\"radio\" name=\"orderBy\" value=\"c.category_id\">Category</input><br>";
             echo "<input type=\"radio\" name=\"orderBy\" value=\"p.product_name\">Name</input><br>";
             echo "<input type=\"radio\" name=\"orderBy\" value=\"p.price\">Price</input><br>";
 
             ?>
-            <br> <label class="invertBtn"><input  type="submit" style="display:none;"> Search </label><br>
+            <br> <label><input  type="submit" style="display:none;"> Search </label><br>
             <?php
             if (isset($_SESSION['loginName']) && $_SESSION["is_admin"] == "1") {
                 echo "<div id=\"cataAdd\">";
@@ -78,17 +76,6 @@ $_SESSION['returnPage'] = $returnPage;
                     $_SESSION['orderBy'] = $_POST['orderBy'];
                     $orderBy = $_SESSION['orderBy'];
                 }
-
-                if (isset($_POST["maxPrice"]) && preg_match("/^\d*\.?\d{0,2}$/", $_POST["maxPrice"]) && $_POST["maxPrice"] != ""){
-                    $_SESSION['maxPrice'] = $_POST['maxPrice'];
-                    $maxPrice = $_SESSION['maxPrice'];
-                }
-
-                if (isset($_POST["minPrice"]) && preg_match("/^\d*\.?\d{0,2}$/", $_POST["minPrice"]) && $_POST["minPrice"] != ""){
-                    $_SESSION['minPrice'] = $_POST['minPrice'];
-                    $minPrice = $_SESSION['minPrice'];
-                }
-
                 $query = "select distinct p.product_id, p.price, p.image, p.product_name, p.description, c.category_id
 						from Product p, product_category c
 						where p.product_id = c.product_id ";

@@ -90,14 +90,6 @@ $_SESSION['returnPage'] = $returnPage;
                     $query .= " and c.category_id in (" . implode("," ,$category) . ")";
                 }
 
-                if ($maxPrice != null){
-                    $query .= " and p.price < $maxPrice";
-                }
-
-                if ($minPrice != null){
-                    $query .= " and p.price > $minPrice";
-                }
-
                 if ($orderBy != null){
                     $query .= " order by $orderBy";
                 }
@@ -110,27 +102,11 @@ $_SESSION['returnPage'] = $returnPage;
                 echo "<div class=\"container\"><div class=\"row\">";
                 while ($row = mysqli_fetch_assoc($result)) {
                     echo "<div class=\"card col-lg-3 col-sm-6\">";
-                    echo "<img class=\"card-img-top\" src=\"includes/images/" . $row['image'] . "\" style=\"width:100px;height:100px;\"> ";
                     echo  "<div class=\"card-body\"><h5 class=\"card-title\">" .  $row['product_name']  . "</h5><p class=\"card-text\"> $" . $row['price']  . "</p><br>";
-                    if (isset($_SESSION['loginName'])) {
-                        ?>
-                        <form action="editCart.php" method="POST">
-                            Quantity: <input type="number" name="quantity" min="1" max="99" value="1" style="width: 50px"><br><br>
-                            <input type="hidden" name="product_id" value="<?php echo $row['product_id']; ?>">
-                            <input type="hidden" name="returnPage" value="<?php echo $returnPage; ?>">
-                            <input type="submit" value="Add To Cart">
-                        </form>
-                        <?php
-                        if ($_SESSION[is_admin] == true) {
-                            echo "<button type=\"button\" onclick=\"window.location.href='updateProduct.php?product_id=".$row['product_id']."&returnPage=".$returnPage."'\">Update Product</button>";
-                        }
-                    }
                     echo "<br><br><div class=\"description\">".$row['description']."</div></div>";
                     echo "</div>";
                 }
                 echo "</div></div>";
-
-                /*"<button onclick=\"addCart(".$row['product_id'].")\">Add</button>" */
 
                 mysqli_close($dbc);
                 ?>

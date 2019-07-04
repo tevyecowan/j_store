@@ -10,9 +10,9 @@ $GLOBALS['a'] = 'success';
         <div class="inner">
             <h1 class="masthead-brand">JStore</h1>
             <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="index.php">Home</a>
                 <a class="nav-link" href="#">About</a>
-                <a class="nav-link" href="#">Archive</a>
+                <a class="nav-link" href="archive.php">Archive</a>
             </nav>
         </div>
     </header>

@@ -10,6 +10,7 @@
         $f_file_size = $_FILES['fileToUpload']['size'];
         $f_file_tmp = $_FILES['fileToUpload']['tmp_name'];
         $f_file_type = $_FILES['fileToUpload']['type'];
+		$f_file_description = $_FILES['fileToUpload']['description'];
 
 
 
@@ -36,8 +37,8 @@
         }else{
             print_r($errors);
         }
-        $query = "insert into uploads (filename, filesize)
-    values('$f_file_name', '$f_file_size');";
+        $query = "insert into uploads (filename, filesize, description)
+    values('$f_file_name', '$f_file_size', '$f_file_description');";
 
         if (mysqli_query ($dbc, $query)){
             echo "<br><h4>Your file info was added to the database.</h4><br>";

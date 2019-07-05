@@ -22,9 +22,18 @@ $_SESSION['returnPage'] = $returnPage;
 
 
 <!-- 					MENU, CONTENT					-->
-The concept for JStore originated as a joke, a riff on
-popular academic journal archive JStor. We have JSwipe, JDate,
-J-SOS,
+<p>The name JStore originated as a joke, a riff on
+popular academic journal archive JStor: "What do you call an online geniza? JStore."
+The name also pokes fun at the desperate-seeming attempts of Jewish organizations and companies to appear hip and youthful,
+by adopting cutesy names like JSwipe and JDate.
+</p>
+
+<p>
+The concept for an online geniza came from conversations with an online community of Jews dedicated to
+embodying the Jewish tradition of asking religious questions based on the changing world around us.
+While our texts may remain static, our traditions, practice, and lives don't. The notion of religious tradition
+at odds with modern life has been abused 
+</p>
 
 <!-- 					SCRIPTS					-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

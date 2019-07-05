@@ -35,6 +35,7 @@ $_SESSION['returnPage'] = $returnPage;
 
                 //echo $query . "<br>";
 
+				//prints list of files (currently in cards)
                 $result = mysqli_query ($dbc, $query);
                 echo "<div class=\"container\"><div class=\"row\">";
                 while ($row = mysqli_fetch_assoc($result)) {

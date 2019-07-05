@@ -47,6 +47,7 @@ if( !empty( $_POST ) && ($_SESSION['s']) )
 }
 */
 
+//checks if upload already submitted successfully
 if(!empty($_POST)) {
     include('includes/upload.php');
     if ($GLOBALS['a'] == true) {

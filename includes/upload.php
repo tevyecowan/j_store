@@ -13,14 +13,14 @@
 
 
 
+        $tmp = explode('.', $_FILES['fileToUpload']['name']);
+        $file_ext = strtolower(end($tmp));
 
-        //$file_ext = strtolower(end(explode('.',$_FILES['image']['name'])));
+        $extensions= array("jpeg","jpg","png", "pdf", "doc");
 
-        //$extensions= array("jpeg","jpg","png");
-
-       // if(in_array($file_ext,$extensions)=== false){
-        //    $errors[]="extension not allowed, please choose a JPEG or PNG file.";
-       // }
+        if(in_array($file_ext,$extensions)=== false){
+            $errors[]="At this time we can only accept .jpeg, .jpg, .png, .pdf or .doc files.";
+        }
 
         if($f_file_size > 2097152) {
             $errors[]='File size must be exactly 2 MB';
@@ -30,18 +30,18 @@
         if(empty($errors)==true) {
             move_uploaded_file($f_file_tmp,SITE_ROOT."/".$f_file_name);
             $file_path = SITE_ROOT."/".$f_file_name;
-            $file_info = new finfo(FILEINFO_MIME);
-            $mime_type = $file_info->buffer(file_get_contents($file_info));
+            //$file_info = new finfo(FILEINFO_MIME);
+            //$mime_type = $file_info->buffer(file_get_contents($file_info));
             echo "<h4>Your file was added to the uploads folder.</h4>";
         }else{
             print_r($errors);
         }
-        $query = "insert into uploads (filename, filesize, filetype)
-    values('$f_file_name', '$f_file_size', '$mime_type');";
+        $query = "insert into uploads (filename, filesize)
+    values('$f_file_name', '$f_file_size');";
 
         if (mysqli_query ($dbc, $query)){
             echo "<br><h4>Your file info was added to the database.</h4><br>";
-            echo $mime_type;
+            //echo $mime_type;
         }else{
             echo "<h4>ERROR: Could not execute $query. " . mysqli_error($dbc) . "</h4><br>";
         }

@@ -47,8 +47,6 @@ if( !empty( $_POST ) && ($_SESSION['s']) )
 }
 */
 
-include ('includes/mysqli_connect.php');
-
 if(!empty($_POST)) {
     include('includes/upload.php');
     if ($GLOBALS['a'] == true) {
@@ -62,12 +60,13 @@ if(!empty($_POST)) {
     <div id="container">
     <form action = "" method = "POST" enctype = "multipart/form-data">
         <label class="btn btn-md btn-secondary"> <input style="display: none;" type = "file" name ="fileToUpload"/> Browse File </label>
+        <label class="btn btn-md btn-secondary"> <input type='textarea' name='description'> Description </label>
         <label class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
+
 
         <ul>
             <li>Sent file: <?php if(isset($_POST['submit'])){echo $_FILES['fileToUpload']['name']; } ?>
             <li>File size: <?php if(isset($_POST['submit'])){echo $_FILES['fileToUpload']['size']; } ?>
-            <li>File type: <?php if(isset($_POST['submit'])){echo $_FILES['fileToUpload']['type']; } ?>
         </ul>
 
     </form>

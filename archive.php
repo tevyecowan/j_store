@@ -28,7 +28,7 @@ $_SESSION['returnPage'] = $returnPage;
             <div id="innerWindow">
 
                 <?php
-
+                include ('includes/mysqli_connect.php');
                 $query = "select distinct filename, description
 						from uploads
 						;";

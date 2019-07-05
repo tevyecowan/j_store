@@ -11,7 +11,7 @@ $GLOBALS['a'] = 'success';
             <h1 class="masthead-brand">JStore</h1>
             <nav class="nav nav-masthead justify-content-center">
                 <a class="nav-link" href="index.php">Home</a>
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="about.php">About</a>
                 <a class="nav-link" href="archive.php">Archive</a>
             </nav>
         </div>

@@ -47,6 +47,8 @@ if( !empty( $_POST ) && ($_SESSION['s']) )
 }
 */
 
+include ('includes/mysqli_connect.php');
+
 if(!empty($_POST)) {
     include('includes/upload.php');
     if ($GLOBALS['a'] == true) {

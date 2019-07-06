@@ -11,8 +11,7 @@
         $f_file_size = $_FILES['fileToUpload']['size'];
         $f_file_tmp = $_FILES['fileToUpload']['tmp_name'];
         $f_file_type = $_FILES['fileToUpload']['type'];
-		$f_file_description = $_FILES['fileToUpload']['description'];
-
+        $f_file_description = $_POST["description"];
 
 		//checks file extension
         $tmp = explode('.', $_FILES['fileToUpload']['name']);

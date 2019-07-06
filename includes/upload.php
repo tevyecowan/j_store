@@ -3,15 +3,16 @@
     //$returnPage = "addDocument";
     //$_SESSION['returnPage'] = $returnPage;
     include('mysqli_connect.php');
-
+    $f_file_name = $_FILES['fileToUpload']['name'];
+    $f_file_size = $_FILES['fileToUpload']['size'];
+    $f_file_tmp = $_FILES['fileToUpload']['tmp_name'];
+    $f_file_type = $_FILES['fileToUpload']['type'];
+    $f_file_description = $_POST["description"];
 	//assigns variables to name, size, type, description, and a temp name
     if(isset($_POST['submit'])){
         $errors= array();
-        $f_file_name = $_FILES['fileToUpload']['name'];
-        $f_file_size = $_FILES['fileToUpload']['size'];
-        $f_file_tmp = $_FILES['fileToUpload']['tmp_name'];
-        $f_file_type = $_FILES['fileToUpload']['type'];
-        $f_file_description = $_POST["description"];
+
+
 
 		//checks file extension
         $tmp = explode('.', $_FILES['fileToUpload']['name']);
@@ -33,7 +34,7 @@
             $file_path = SITE_ROOT."/".$f_file_name;
             //$file_info = new finfo(FILEINFO_MIME);
             //$mime_type = $file_info->buffer(file_get_contents($file_info));
-            echo "<h4>Your file was added to the uploads folder.</h4>";
+            echo "<h4>Your file " . $f_file_name . " was added to the uploads folder.</h4>";
         }else{
             print_r($errors);
         }

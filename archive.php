@@ -37,14 +37,14 @@ $_SESSION['returnPage'] = $returnPage;
 
 				//prints list of files (currently in cards)
                 $result = mysqli_query ($dbc, $query);
-                echo "<div class=\"container\"><div class=\"row\">";
+                echo "<div class=\"list-group\">";
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<div class=\"card col-lg-3 col-sm-6\">";
-                    echo  "<div class=\"card-body\"><h5 class=\"card-title\">" .  $row['filename']  . "</p><br>";
-                    echo "<br><br><div class=\"description\">".$row['description']."</div></div>";
-                    echo "</div>";
+                    echo "<a href=\"#\" style=\"width:35%;\" class=\"list-group-item list-group-item-action flex-column align-items-start\">";
+                    echo  "<h5 class=\"mb-1\">" .  $row['filename']  . "</h5>";
+                    echo "<p class=\"mb-1\">".$row['description']."</p>";
+                    echo "</a>";
                 }
-                echo "</div></div>";
+                echo "</div>";
 
                 mysqli_close($dbc);
                 ?>

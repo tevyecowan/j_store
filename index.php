@@ -26,14 +26,11 @@ $_SESSION['returnPage'] = $returnPage;
 <!-- 					MENU, CONTENT					-->
 <div id="content">
 
-    <main id="intro" role="main" class="inner cover">
-        <p class="lead">some intro text here</p>
-        <p class="lead">
-            <a href="#" class="btn btn-lg btn-secondary">Learn more</a>
-        </p>
-    </main>
-
-
+<p class="lead">
+Welcome to JStore, the online geniza. Please submit your document through the form below. Please note that at this time, we only
+accept .pdf, .doc, .png, .jpg and .jpeg files.
+</p>
+    
 <?php
 
 /*if(!isset($_SESSION['s'])){

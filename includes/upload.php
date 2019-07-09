@@ -59,8 +59,6 @@
 
         $_POST = array();
     }
-        else{    //if user somehow got to this page without submitting the form
-            echo  "<h4>Please enter your new product into the form below</h4>";
-    }
+      
     mysqli_close($dbc);
     ?>

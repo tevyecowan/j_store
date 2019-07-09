@@ -29,6 +29,8 @@ $_SESSION['returnPage'] = $returnPage;
 
                 <?php
                 include ('includes/mysqli_connect.php');
+				
+				//queries distinct items from database
                 $query = "select distinct filename, description
 						from uploads
 						;";
@@ -39,7 +41,7 @@ $_SESSION['returnPage'] = $returnPage;
                 $result = mysqli_query ($dbc, $query);
                 echo "<div class=\"list-group\">";
                 while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<a href=\"#\" style=\"width:35%;\" class=\"list-group-item list-group-item-action flex-column align-items-start\">";
+                    echo "<a href=\"#\" style=\"width:50%;\" class=\"list-group-item list-group-item-action flex-column align-items-start\">";
                     echo  "<h5 class=\"mb-1\">" .  $row['filename']  . "</h5>";
                     echo "<p class=\"mb-1\">".$row['description']."</p>";
                     echo "</a>";

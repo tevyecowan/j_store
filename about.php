@@ -29,10 +29,14 @@ by adopting cutesy names like JSwipe and JDate.
 </p>
 
 <p>
+A geniza is a temporary storage place for holy documents and texts, items that contain Hashem's name
+before they are given a proper burial.
+</p>
+
+<p>
 The concept for an online geniza came from conversations with an online community of Jews dedicated to
 embodying the Jewish tradition of asking religious questions based on the changing world around us.
-While our texts may remain static, our traditions, practice, and lives don't. The notion of religious tradition
-at odds with modern life has been abused 
+While our texts may remain static, our lives don't.
 </p>
 
 <!-- 					SCRIPTS					-->

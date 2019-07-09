@@ -40,8 +40,17 @@ The concept for an online geniza came from conversations with an online communit
 embodying the Jewish tradition of asking religious questions based on the changing world around us.
 While our texts may remain static, our lives don't. For many of us, most of our documents, even including
 books, are hosted online... But just because our texts have become digitized, we should still be able
-to dispose of them in a halakhically permissable way. Because of the nature of data - that it can only be copied, not transferred, 
-creating a "proper" geniza for digital documents is problematic.   
+to dispose of them in a halakhically permissable way. Because of the nature of data - that it can only be copied, not truly transferred, 
+creating a "proper" geniza for digital documents is problematic. Even if one were to upload their documents
+into an online archive like JStore, they will still need to delete the original copy. It is my intention with this project
+to offer an alternative, however problematic, to traditions that may no longer suit our needs.
+</p>
+
+<p>
+This site is created using PHP and JS/JQuery. I have based much of the functionality for JStore
+off my year-end final project at Camosun College's ICS certificate program, which was to create a fully functional e-commerce
+site. I have used the creation of JStore as a way to solidify and put into practice what I have learned at school. How wonderful
+it is to finally have the skills to bring to life the ideas I have been floating around for years!
 </p>
 
 <!-- 					SCRIPTS					-->

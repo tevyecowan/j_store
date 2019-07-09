@@ -12,8 +12,6 @@
 		if(isset($_POST['submit'])){
 			$errors= array();
 
-
-
 			//checks file extension
 			$tmp = explode('.', $_FILES['fileToUpload']['name']);
 			$file_ext = strtolower(end($tmp));
@@ -55,6 +53,8 @@
 				$GLOBALS['a'] = true;
 				echo "<br><h4>success</h4><br>";
 			}
+			
+			//TODO: add print item number upon successful add
 			else{$GLOBALS['a'] = false;}
 
 			$_POST = array();

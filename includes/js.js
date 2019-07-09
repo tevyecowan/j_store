@@ -1,7 +1,10 @@
 $(document).ready(function() {
-    $('input[name=fileToUpload]').change(function(ev) {
-        alert("selected");
+    $('#browse').change(function(ev) {
+       var fullFileName =  $('#browse').val();
+       var length = fullFileName.length;
+       var index = fullFileName.indexOf("fake");
+       var fileName = fullFileName.substring(length,index+9);
 
-        $('#add').append('<p>Selected file is: ' + $('#fileToUpload') + '.</p>');
+        $('#add').append('Selected file is: ' + fileName + '.');
     });
 });

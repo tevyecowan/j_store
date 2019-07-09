@@ -2,7 +2,7 @@ TODO
 
     INDEX
     
-    - file names upon upload
+    - file names upon select
     
     UPLOAD
     

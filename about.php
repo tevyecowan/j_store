@@ -30,13 +30,18 @@ by adopting cutesy names like JSwipe and JDate.
 
 <p>
 A geniza is a temporary storage place for holy documents and texts, items that contain Hashem's name
-before they are given a proper burial.
+before they are given a proper burial. Because they contain the name of Hashem, these items cannot be
+disposed of like other, regular items. They must be treated with respect and buried when they are no
+longer of use.
 </p>
 
 <p>
 The concept for an online geniza came from conversations with an online community of Jews dedicated to
 embodying the Jewish tradition of asking religious questions based on the changing world around us.
-While our texts may remain static, our lives don't.
+While our texts may remain static, our lives don't. For many of us, most of our documents, even including
+books, are hosted online... But just because our texts have become digitized, we should still be able
+to dispose of them in a halakhically permissable way. Because of the nature of data - that it can only be copied, not transferred, 
+creating a "proper" geniza for digital documents is problematic.   
 </p>
 
 <!-- 					SCRIPTS					-->

@@ -55,7 +55,9 @@
 			}
 			
 			//TODO: add print item number upon successful add
-			else{$GLOBALS['a'] = false;}
+			
+			
+			else{$GLOBALS['a'] = false;} //success variable
 
 			$_POST = array();
 		}

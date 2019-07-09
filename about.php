@@ -39,10 +39,10 @@
 		</p>
 		<br>
 		<p class="lead">
-			The concept for an online geniza came from conversations with an online community of Jews dedicated to
-			embodying the Jewish tradition of asking religious questions based on the changing world around us.
+			The concept for an online geniza came from conversations with online communities of Jews following
+			the Jewish tradition of asking religious questions based on the changing world around us.
 			While our texts may remain static, our lives don't. For many of us, most of our documents, even including
-			books, are hosted online... But just because our texts have become digitized, we should still be able
+			books, are hosted online... But even though our texts have become digitized, we should still be able
 			to dispose of them in a halakhically permissable way. Because of the nature of data - that it can only be copied, not truly transferred, 
 			creating a "proper" geniza for digital documents is problematic. Even if one were to upload their documents
 			into an online archive like JStore, they will still need to delete the original copy. It is my intention with this project

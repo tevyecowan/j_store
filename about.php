@@ -52,7 +52,7 @@ to do the same.
 <br>
 <p class="lead">
 This site was created using PHP and JS/JQuery. I have based much of the functionality for JStore
-off my year-end final project at Camosun College's ICS certificate program, which was to create a fully functional e-commerce
+off my year-end project at Camosun College's ICS certificate program, which was to create a fully functional e-commerce
 site. I have used the creation of JStore as a way to solidify and put into practice what I have learned at school. How wonderful
 it is to finally have the skills to bring to life the ideas I have been floating around for years!
 </p>

@@ -2,7 +2,7 @@ TODO
 
     INDEX
     
-    - file names upon select
+ 
     
     UPLOAD
     
@@ -14,4 +14,4 @@ TODO
     
     ABOUT
     
-    - explain....
+  

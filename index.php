@@ -49,7 +49,7 @@ if(!empty($_POST)) {
     include('includes/upload.php');
     if ($GLOBALS['a'] == true) {
         echo "<h4>Thank you, your details have been submitted succesfully.</h4>";
-    } // else show the form, either a clean one or with possible error messages
+    }
     else {
         echo "<h4>Oops! Something went wrong</h4>";
     }

@@ -35,7 +35,7 @@ $_SESSION['returnPage'] = $returnPage;
 						from uploads
 						;";
 
-				//prints list of files (currently in cards)
+				//prints list of files
                 $result = mysqli_query ($dbc, $query);
                 echo "<div class=\"list-group\">";
                 while ($row = mysqli_fetch_assoc($result)) {

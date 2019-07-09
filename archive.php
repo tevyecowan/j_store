@@ -12,48 +12,41 @@
 <body>
 
 <!-- 					HEADER					-->
-<?php
+	<?php
 
-$returnPage = "addDocument";
-include('includes/header.php');
-$_SESSION['returnPage'] = $returnPage;
+		$returnPage = "addDocument";
+		include('includes/header.php');
+		$_SESSION['returnPage'] = $returnPage;
 
-?>
+	?>
 
 
 <!-- 					MENU, CONTENT					-->
-<div id="menu">
-    <div id="archivePg" style="display: block">
-        <div id="searchMenuAndBorder">
-            <div id="innerWindow">
+	<div id="menu">
 
-                <?php
-                include ('includes/mysqli_connect.php');
-				
-				//queries distinct items from database
-                $query = "select distinct filename, description
-						from uploads
-						;";
+		<?php
+			include ('includes/mysqli_connect.php');
 
-				//prints list of files
-                $result = mysqli_query ($dbc, $query);
-                echo "<div class=\"list-group\">";
-                while ($row = mysqli_fetch_assoc($result)) {
-                    echo "<a href=\"#\" style=\"width:50%;\" class=\"list-group-item list-group-item-action flex-column align-items-start\">";
-                    echo  "<h5 class=\"mb-1\">" .  $row['filename']  . "</h5>";
-                    echo "<p class=\"mb-1\">".$row['description']."</p>";
-                    echo "</a>";
-                }
-                echo "</div>";
+			//queries distinct items from database
+			$query = "select distinct filename, description
+					from uploads
+					;";
 
-                mysqli_close($dbc);
-                ?>
-            </div>
-        </div>
-    </div>
-</div>
+			//prints list of files
+			$result = mysqli_query ($dbc, $query);
+			echo "<div class=\"list-group\">";
+			while ($row = mysqli_fetch_assoc($result)) {
+				echo "<a href=\"#\" style=\"width:50%;\" class=\"list-group-item list-group-item-action flex-column align-items-start\">";
+				echo  "<h5 class=\"mb-1\">" .  $row['filename']  . "</h5>";
+				echo "<p class=\"mb-1\">".$row['description']."</p>";
+				echo "</a>";
+			}
+			echo "</div>";
 
-</div>
+			mysqli_close($dbc);
+		?>
+	</div>
+
 
 <!-- 					SCRIPTS					-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -1,8 +1,7 @@
 <?php
-session_start();
-$success = false;
-$GLOBALS['a'] = 'success';
-
+	session_start();
+	$success = false;
+	$GLOBALS['a'] = 'success';
 ?>
 <!-- 					NAV					-->
 <div id="header" class="cover-container d-flex p-3 mx-auto flex-column">

@@ -14,66 +14,49 @@
 <body>
 
 <!-- 					HEADER					-->
-<?php
+	<?php
 
-$returnPage = "addDocument";
-include('includes/header.php');
-$_SESSION['returnPage'] = $returnPage;
+		$returnPage = "addDocument";
+		include('includes/header.php');
+		$_SESSION['returnPage'] = $returnPage;
 
-?>
-
-
-<!-- 					MENU, CONTENT					-->
-<div id="content">
-
-<p class="lead">
-Welcome to JStore, the online geniza. Please submit your document through the form below. Please note that at this time, we only
-accept .pdf, .doc, .png, .jpg and .jpeg files.
-</p>
-    
-<?php
-
-/*if(!isset($_SESSION['s'])){
-    $_SESSION['s'] = true;
-};
-
-if( !empty( $_POST ) && ($_SESSION['s']) )
-{
-    //your code
-    $_SESSION['s'] = false;
-}
-*/
-
-//checks if upload already submitted successfully
-if(!empty($_POST)) {
-    include('includes/upload.php');
-    if ($GLOBALS['a'] == true) {
-        echo "<h4>Thank you, your details have been submitted succesfully.</h4>";
-    }
-    else {
-        echo "<h4>Oops! Something went wrong</h4>";
-    }
-}
-?>
-    <div id="container">
-    <form id="form" action = "" method = "POST" enctype = "multipart/form-data">
-        <label class="btn btn-md btn-secondary"> <input style="display: none;" id="browse" type = "file" name ="fileToUpload"/> Browse File </label>
-        <label class="btn btn-md btn-secondary"> <input type='textarea' name='description'> Description </label>
-        <label class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
-        <div id="add"></div>
+	?>
 
 
+	<!-- 					MENU, CONTENT					-->
+	<div id="content">
 
-    </form>
+		<p class="lead">
+			Welcome to JStore, the online geniza. Please submit your document through the form below. Please note that at this time, we only
+			accept .pdf, .doc, .png, .jpg and .jpeg files.
+		</p>
+		
+		<?php
 
-    </div>
+			//checks if upload already submitted successfully
+			if(!empty($_POST)) {
+				include('includes/upload.php');
+				if ($GLOBALS['a'] == true) {
+					echo "<h4>Thank you, your details have been submitted succesfully.</h4>";
+				}
+				else {
+					echo "<h4>Oops! Something went wrong</h4>";
+				}
+			}
+		?>
+		<div id="container">
+			<form id="form" action = "" method = "POST" enctype = "multipart/form-data">
+				<label class="btn btn-md btn-secondary"> <input style="display: none;" id="browse" type = "file" name ="fileToUpload"/> Browse File </label>
+				<label class="btn btn-md btn-secondary"> <input type='textarea' name='description'> Description </label>
+				<label class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
+				<div id="add"></div>
+			</form>
+		</div>
+	</div>
 
-
-</div>
-
-<div id="footer">
-  <br><br><br><br>
-</div>
+	<div id="footer">
+		<br><br><br><br>
+	</div>
 <!-- 					SCRIPTS					-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

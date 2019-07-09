@@ -12,52 +12,52 @@
 <body>
 
 <!-- 					HEADER					-->
-<?php
+	<?php
 
-$returnPage = "addDocument";
-include('includes/header.php');
-$_SESSION['returnPage'] = $returnPage;
+		$returnPage = "addDocument";
+		include('includes/header.php');
+		$_SESSION['returnPage'] = $returnPage;
 
-?>
+	?>
 
 
-<!-- 					MENU, CONTENT					-->
+	<!-- 					MENU, CONTENT					-->
 
-<main id="intro" role="main" class="inner cover">
-    
-<p class="lead">The name JStore originated as a joke, a riff on
-popular academic journal archive JStor: "What do you call an online geniza? JStore."
-The name also pokes fun at the desperate-seeming attempts of Jewish organizations and companies to appear hip and youthful,
-by adopting cutesy names like JSwipe and JDate.
-</p>
-<br>
-<p class="lead">
-A geniza is a temporary storage place for holy documents and texts, items that contain Hashem's name
-before they are given a proper burial. Because they contain the name of Hashem, these items cannot be
-disposed of like other, regular items. They must be treated with respect and buried when they are no
-longer of use.
-</p>
-<br>
-<p class="lead">
-The concept for an online geniza came from conversations with an online community of Jews dedicated to
-embodying the Jewish tradition of asking religious questions based on the changing world around us.
-While our texts may remain static, our lives don't. For many of us, most of our documents, even including
-books, are hosted online... But just because our texts have become digitized, we should still be able
-to dispose of them in a halakhically permissable way. Because of the nature of data - that it can only be copied, not truly transferred, 
-creating a "proper" geniza for digital documents is problematic. Even if one were to upload their documents
-into an online archive like JStore, they will still need to delete the original copy. It is my intention with this project
-to offer an alternative, however problematic, to traditions that may no longer suit our needs, and hopefully inspire others
-to do the same.
-</p>
-<br>
-<p class="lead">
-This site was created using PHP and JS/JQuery. I have based much of the functionality for JStore
-off my year-end project at Camosun College's ICS certificate program, which was to create a fully functional e-commerce
-site. I have used the creation of JStore as a way to solidify and put into practice what I have learned at school. How wonderful
-it is to finally have the skills to bring to life the ideas I have been floating around for years!
-</p>
-<br>
-</main>
+	<main id="intro" role="main" class="inner cover">
+		
+		<p class="lead">
+			The name JStore originated as a joke, a riff on popular academic journal archive JStor: "What do you call an online geniza? JStore."
+			The name also pokes fun at the desperate-seeming attempts of Jewish organizations and companies to appear hip and youthful,
+			by adopting cutesy names like JSwipe and JDate.
+		</p>
+		<br>
+		<p class="lead">
+			A geniza is a temporary storage place for holy documents and texts, items that contain Hashem's name
+			before they are given a proper burial. Because they contain the name of Hashem, these items cannot be
+			disposed of like other, regular items. They must be treated with respect and buried when they are no
+			longer of use.
+		</p>
+		<br>
+		<p class="lead">
+			The concept for an online geniza came from conversations with an online community of Jews dedicated to
+			embodying the Jewish tradition of asking religious questions based on the changing world around us.
+			While our texts may remain static, our lives don't. For many of us, most of our documents, even including
+			books, are hosted online... But just because our texts have become digitized, we should still be able
+			to dispose of them in a halakhically permissable way. Because of the nature of data - that it can only be copied, not truly transferred, 
+			creating a "proper" geniza for digital documents is problematic. Even if one were to upload their documents
+			into an online archive like JStore, they will still need to delete the original copy. It is my intention with this project
+			to offer an alternative, however problematic, to traditions that may no longer suit our needs, and hopefully inspire others
+			to do the same.
+		</p>
+		<br>
+		<p class="lead">
+			This site was created using PHP and JS/JQuery. I have based much of the functionality for JStore
+			off my year-end project at Camosun College's ICS certificate program, which was to create a fully functional e-commerce
+			site. I have used the creation of JStore as a way to solidify and put into practice what I have learned at school. How wonderful
+			it is to finally have the skills to bring to life the ideas I have been floating around for years!
+		</p>
+		<br>
+	</main>
 
 <!-- 					SCRIPTS					-->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

@@ -15,3 +15,6 @@ TODO
     ABOUT
     
   
+	GENERAL
+	
+	- style, structure, images

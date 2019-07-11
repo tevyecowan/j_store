@@ -24,13 +24,14 @@
 	<!-- 					MENU, CONTENT					-->
 
 	<main id="intro" role="main" class="inner cover">
-		
+		<h2 style="text-align:center">What does JStore mean?</h2>
 		<p class="lead">
 			The name JStore originated as a joke, a riff on popular academic journal archive JStor: "What do you call an online geniza? JStore."
 			The name also pokes fun at the desperate-seeming attempts of Jewish organizations and companies to appear hip and youthful,
 			by adopting cutesy names like JSwipe and JDate.
 		</p>
 		<br>
+		<h2 style="text-align:center">What's a geniza?</h2>
 		<p class="lead">
 			A geniza is a temporary storage place for holy documents and texts, items that contain Hashem's name
 			before they are given a proper burial. Because they contain the name of Hashem, these items cannot be
@@ -38,6 +39,7 @@
 			longer of use.
 		</p>
 		<br>
+		<h2 style="text-align:center">Why does this exist?</h2>
 		<p class="lead">
 			The concept for an online geniza came from conversations with online communities of Jews following
 			the Jewish tradition of asking religious questions based on the changing world around us.
@@ -50,6 +52,7 @@
 			to do the same.
 		</p>
 		<br>
+		<h2 style="text-align:center">How does this exist?</h2>
 		<p class="lead">
 			This site was created using PHP and JS/JQuery. I have based much of the functionality for JStore
 			off my year-end project at Camosun College's ICS certificate program, which was to create a fully functional e-commerce

@@ -110,6 +110,7 @@
 		$f_file_tmp = $_FILES['fileToUpload']['tmp_name'];
 		$f_file_type = $_FILES['fileToUpload']['type'];
 		$f_file_description = $_POST["description"];
+        $f_file_title = $_POST["title"];
 		//assigns variables to name, size, type, description, and a temp name
 		if(isset($_POST['submit'])){
 			$errors= array();
@@ -141,7 +142,7 @@
 			
 			//inserts file values into database
 			$query = "insert into uploads (filename, filesize, description)
-				values('$f_file_name', '$f_file_size', '$f_file_description');";
+				values('$f_file_title', '$f_file_size', '$f_file_description');";
 			if (mysqli_query ($dbc, $query)){
 				echo "<br><h4>Your file info was added to the database.</h4><br>";
 				//echo $mime_type;

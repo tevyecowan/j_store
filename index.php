@@ -47,7 +47,11 @@
 		<div id="container">
 			<form id="form" action = "" method = "POST" enctype = "multipart/form-data">
 				<label class="btn btn-md btn-secondary"> <input style="display: none;" id="browse" type = "file" name ="fileToUpload"/> Browse File </label>
-				<label class="btn btn-md btn-secondary"> <input type='textarea' name='description'> Description </label>
+                <br>
+                <label class="btn btn-md btn-secondary"> <input type='textarea' name='title'> File Title </label>
+                <br>
+                <label class="btn btn-md btn-secondary"> <input type='textarea' name='description'> Description </label>
+                <br>
 				<label class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
 				<div id="add"></div>
 			</form>

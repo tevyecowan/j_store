@@ -27,13 +27,12 @@
 	<div id="content">
 
 		<p class="lead">
-			Welcome to JStore, the online geniza. Please submit your document through the form below. Please note that at this time, we only
-			accept .pdf, .doc, .png, .jpg and .jpeg files.
+			Welcome to JStore, the online geniza. Please submit your document through the form below.
 		</p>
 		
 		<?php
 
-			//checks if upload already submitted successfully
+			//checks if upload already submitted 
 			if(!empty($_POST)) {
 				include('includes/upload.php');
 				if ($GLOBALS['a'] == true) {

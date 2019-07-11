@@ -83,12 +83,11 @@ body {
 	width:75%;
 }
 
-
-	.textLabel {
-
-	}
-
 	textarea {
 		border-radius: 5px;
 		padding:0.75em;
+	}
+	
+	#intro {
+		max-width:20em;
 	}

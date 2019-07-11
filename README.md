@@ -18,3 +18,4 @@ TODO
 	GENERAL
 	
 	- style, structure, images
+	- standardize CSS - sizes -> em, etc

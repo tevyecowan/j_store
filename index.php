@@ -48,9 +48,9 @@
 			<form id="form" action = "" method = "POST" enctype = "multipart/form-data">
 				<label class="btn btn-md btn-secondary"> <input style="display: none;" id="browse" type = "file" name ="fileToUpload"/> Browse File </label>
                 <br>
-                <label class="btn btn-md btn-secondary"> <input type='textarea' name='title'> File Title </label>
+                <span class="textLabel"> File Title </span> <input  type='textarea' name='title'>
                 <br>
-                <label class="btn btn-md btn-secondary"> <input type='textarea' name='description'> Description </label>
+                <span class="textLabel"> Description </span> <input type='textarea' name='description'>
                 <br>
 				<label class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
 				<div id="add"></div>

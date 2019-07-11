@@ -71,6 +71,7 @@ body {
 
 #intro {
 	padding:100px;
+	max-width:20em;
 }
 
 #content {
@@ -88,6 +89,3 @@ body {
 		padding:0.75em;
 	}
 	
-	#intro {
-		max-width:20em;
-	}

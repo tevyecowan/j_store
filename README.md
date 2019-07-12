@@ -2,7 +2,7 @@ TODO
 
     INDEX
     
- 
+	- add file id/number on bottom of page (quantity of uploads)
     
     UPLOAD
     

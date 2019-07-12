@@ -45,13 +45,14 @@
 		?>
 		<div id="container">
 			<form id="form" action = "" method = "POST" enctype = "multipart/form-data">
-				<label class="btn btn-md btn-secondary"> <input style="display: none;" id="browse" type = "file" name ="fileToUpload"/> Browse File </label>
-                <br>
-                <span class="textLabel"> File Title </span> <input  type='textarea' name='title'>
-                <br>
-                <span class="textLabel"> Description </span> <input type='textarea' name='description'>
-                <br>
-				<label class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
+                <div id="textBoxes" style="width:50%;">
+                    <span class="textLabel"> File Title </span> <input style="width:auto;"  type='textarea' name='title'>
+                    <br><br>
+                    <span class="textLabel"> Description </span> <input type='textarea' name='description'>
+                    <br><br>
+                </div>
+                <label style="width:10%" class="btn btn-md btn-secondary"> <input style="display: none;" id="browse" type = "file" name ="fileToUpload"/> Browse File </label>
+                <label style="width:10%" class="btn btn-md btn-secondary"> <input style="display:none;" type = "submit" name="submit" /> Submit </label>
 				<div id="add"></div>
 			</form>
 		</div>

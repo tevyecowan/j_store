@@ -71,17 +71,22 @@ body {
 
 #intro {
 	padding:100px;
-	max-width:20em;
+	max-width:200em;
 }
 
 #content {
 	padding-left: 2em;
 	padding-right: 2em;
+	padding-top: 5em;
 }
 
 #list {
 	padding: 100px;
 	width:75%;
+}
+
+form {
+	padding:2em;
 }
 
 	textarea {

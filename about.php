@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <title>J-Store Online Geniza</title>
-    <meta name="description" content="J-Store Online Geniza">
+    <title>JStore About</title>
+    <meta name="description" content="JStore Online Geniza">
     <meta name="author" content="Tevye Cowan">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="includes/styles.css" type="text/css" media="screen" />

@@ -18,6 +18,7 @@ TODO
   
 	GENERAL
 	
-	- style, structure, images
+	- style, structure, images - > jewish motif
 	- standardize CSS - sizes -> em, etc
 	- issue with file uploads: how to make it safe upon deployment?
+	- mark active page w JS

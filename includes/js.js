@@ -1,5 +1,11 @@
 $(document).ready(function() {
 
+	$(#indexPg).click(function () {
+		
+	});
+
+
+
     $('#browse').change(function(ev) {
 
        $('#add').empty();

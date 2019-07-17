@@ -9,9 +9,14 @@
         <div class="inner">
             <h1 class="masthead-brand">JStore</h1>
             <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-pills active" id="indexPg" href="index.php">Home</a>
-                <a class="nav-pills" id="aboutPg" href="about.php">About</a>
-                <a class="nav-pills" id="archivePg" href="archive.php">Archive</a>
+				<ul class="nav nav-pills">
+					<li class="nav-item">
+					<a class="nav-link active" id="indexPg" href="index.php">Home</a>
+					<li class="nav-item">
+					<a class="nav-link" id="aboutPg" href="about.php">About</a>
+					<li class="nav-item">
+					<a class="nav-link" id="archivePg" href="archive.php">Archive</a>
+				</ul>
             </nav>
         </div>
     </header>

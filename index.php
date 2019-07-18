@@ -24,7 +24,7 @@
 
 
 	<!-- 					MENU, CONTENT					-->
-	<div id="content">
+	<div id="content" class="textContainer">
 
 		<p class="lead">
 			Welcome to JStore, the online geniza. Please submit your document through the form below.
@@ -58,7 +58,7 @@
 		</div>
 	</div>
 
-	<div id="footer">
+	<div id="footer" class="textContainer">
 		<br><br><br><br>
 	</div>
 <!-- 					SCRIPTS					-->

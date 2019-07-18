@@ -2,8 +2,18 @@
 body {
 	color: dimgrey;
 	background-color: floralwhite;
+	background-image:url("images/background.jpg");
+	background-repeat: repeat;
+    background-attachment: fixed;
 }
 
+
+.textContainer {
+  background-color:rgb(0,0,0,0.75);
+  color:white;
+  padding:2em;
+  margin:1em;
+}
 
 /**********HEADER***********/
 

@@ -23,7 +23,7 @@
 
 	<!-- 					MENU, CONTENT					-->
 
-	<main id="intro" role="main" class="inner cover">
+	<main id="intro" role="main" class="textContainer inner cover">
 		<h2 style="text-align:center">What does JStore mean?</h2>
 		<p class="lead">
 			The name JStore originated as a joke, a riff on popular academic journal archive JStor: "What do you call an online geniza? JStore."

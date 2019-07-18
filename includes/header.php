@@ -4,7 +4,7 @@
 	$GLOBALS['a'] = 'success';
 ?>
 <!-- 					NAV					-->
-<div id="header" class="cover-container d-flex p-3 mx-auto flex-column">
+<div id="header" class="textContainer cover-container d-flex p-3 mx-auto flex-column">
     <header class="masthead mb-auto">
         <div class="inner">
             <h1 class="masthead-brand">JStore</h1>

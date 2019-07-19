@@ -1,19 +1,19 @@
 $(document).ready(function() {
 
-$('#indexPg').click(function () {
-		$("#indexPg").attr("class", "nav-link active");
-		$("#aboutPg").attr("class", "nav-link");
-		$("#archivePg").attr("class", "nav-link");
+	$('#indexPg').click(function () {
+		$('#indexPg').attr("class", "nav-link active");
+		$('#aboutPg').attr("class", "nav-link");
+		$('#archivePg').attr("class", "nav-link");
 	});
 	$('#aboutPg').click(function () {
-		$("#aboutPg").attr("class", "nav-link active");
-		$("#indexPg").attr("class", "nav-link");
-		$("#archivePg").attr("class", "nav-link");
+		$('#aboutPg').attr("class", "nav-link active");
+		$('#indexPg').attr("class", "nav-link");
+		$('#archivePg').attr("class", "nav-link");
 	});
 	$('#archivePg').click(function () {
-		$("#archivePg").attr("class", "nav-link active");
-		$("#aboutPg").attr("class", "nav-link");
-		$("#indexPg").attr("class", "nav-link");
+		$('#archivePg').attr("class", "nav-link active");
+		$('#aboutPg').attr("class", "nav-link");
+		$('#indexPg').attr("class", "nav-link");
 	});
 
 

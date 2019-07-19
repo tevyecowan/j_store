@@ -2,7 +2,7 @@
 body {
 	color: dimgrey;
 	background-color: floralwhite;
-	background-image:url("images/d.jpg");
+	background-image:url("images/d.png");
 	background-repeat: repeat;
     background-attachment: fixed;
 }
@@ -28,7 +28,8 @@ body {
 
 #header{
 	display: flex;
-	background-color:white;
+	background-color:rgb(155,197,210);
+
 }
 /* Large */
 .navigation {
@@ -61,7 +62,7 @@ body {
 	border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-/* The sticky class is added to the navbar with JS when it reaches its scroll position
+/* The sticky class is added to the navbar with JS when it reaches its scroll position*/
 .sticky {
 	position: fixed;
 	top: 0px;
@@ -70,7 +71,7 @@ body {
 
 }
 
-*/
+
 
 /*********************CONTENT**********************/
 

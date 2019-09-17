@@ -22,4 +22,8 @@ TODO
 	- style, structure, images - > jewish motif
 	- standardize CSS - sizes -> em, etc
 	- issue with file uploads: how to make it safe upon deployment?
+	
+	NAV
+	
+	- active link
 
